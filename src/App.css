@@ -1,0 +1,81 @@
+.container {
+  height: 100vh;
+  font-family: Helvetica;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+#city {
+  font-size: 36px;
+}
+
+#time {
+  font-size: 24px;
+}
+
+#current-temperature {
+  margin: 0;
+  font-size: 200px;
+}
+
+#weather-type {
+  font-size: 36px;
+}
+
+.when {
+  margin: 0;
+  font-size: 24px;
+}
+
+#today-temperature,
+#tomorrow-temperature {
+  margin: 0;
+  font-size: 36px;
+}
+
+.today-weather,
+.tomorrow-weather {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.main-block {
+  width: 529px;
+  height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: calc(50vh - 350px);
+}
+
+.main-block__weather {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.current-weather {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.today-weather {
+  width: 50%;
+}
+
+.tomorrow-weather {
+  width: 50%;
+}
