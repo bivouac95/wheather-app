@@ -17,6 +17,13 @@ main {
 
 #city {
   font-size: 36px;
+  border: 0;
+  background: none;
+  text-align: center;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #time {

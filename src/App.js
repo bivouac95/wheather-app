@@ -1,13 +1,25 @@
 import "./App.css";
-import Time from "./components/Time"
+import Time from "./components/Time";
+import City from "./components/City";
+import update from "./utils/update_data";
+import { useState } from "react";
+
+let weatherData = {
+  timezone: 0,
+  temp: 0,
+  weather: 0,
+  today_minmax: [0, 0],
+  tommorow_minmax: [0, 0]
+};
 
 function App() {
+  [data, setData] = useState(weatherData)
   return (
     <div className="container">
       <main>
-        <span id="city">Чита</span>
+        <City />
         <div className="main-block">
-          <Time />
+          {/* <Time timezone={data.timezone} /> */}
           <div className="main-block__weather">
             <div className="current-weather">
               <h1 id="current-temperature">-18°</h1>
